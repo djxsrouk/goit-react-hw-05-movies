@@ -1,0 +1,14 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #102e52;
+    padding: 10px 50px;
+}
+
+.author {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #102e52;
+}

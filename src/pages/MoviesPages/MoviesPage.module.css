@@ -1,0 +1,26 @@
+.movieSearchContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    list-style-type: none;
+    padding-top: 100px;
+}
+
+.movieSearchItem {
+    list-style-type: none;
+    text-align: center;
+    color: #102e52;
+}
+
+.movieSearchLink {
+    font-weight: 500;
+    color: #102e52;
+    text-decoration: none;
+}
+
+.movieSearchLink:hover {
+    color: #d8672b;
+    font-weight: 700;
+}

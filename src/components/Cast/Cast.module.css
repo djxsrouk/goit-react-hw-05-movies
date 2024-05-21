@@ -1,0 +1,19 @@
+.wrapper ul {
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(12, 1fr);
+    list-style-type: none;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    margin: 10px;
+}
+
+.actorDetails p {
+    text-align: center;
+    font-size: 14px;
+    color: #102e52;
+}

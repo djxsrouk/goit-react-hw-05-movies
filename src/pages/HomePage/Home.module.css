@@ -1,0 +1,47 @@
+.containerHome {
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+.containerBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.titleBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    text-transform:uppercase;
+    color: #102e52;
+}
+
+.iconHome {
+    width: 25px;
+    height: 25px;
+    fill: #d8672b;
+}
+
+.moviesList {
+    list-style-type: none;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.link {
+    font-weight: 500;
+    color: #102e52;
+    text-decoration: none;
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+
+.link:hover {
+    color: #d8672b;
+    font-weight: 700;
+}

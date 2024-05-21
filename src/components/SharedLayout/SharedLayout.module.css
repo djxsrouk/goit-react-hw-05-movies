@@ -1,0 +1,53 @@
+.containerLogo {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 30px;
+}
+
+.titleLogo {
+    font-weight: 700;
+    color: #fcfce8;
+    padding-left: 15px;
+}
+
+.iconLogo {
+    height: 50px;
+    width: 50px;
+    fill: #d8672b;
+
+}
+
+.titleLogoDB {
+    color: #d8672b;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 32px;
+    font-weight: 700;
+    background-color: #102e52;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.menu {
+    text-decoration: none;
+    color: #fcfce8;
+}
+
+.menu:hover,
+.menu.active {
+    color:#d8672b;
+
+}
