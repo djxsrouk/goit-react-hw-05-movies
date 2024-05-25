@@ -26,21 +26,24 @@ const Home = () => {
         <h1 className={styles.titleBox}>Top Trending movies today</h1>
         <LuPopcorn className={styles.iconHome} />
       </div>
-      <ul className={styles.moviesList}>
-        {trending.map(movie => {
-          return (
-            <li key={movie.id}>
-              <Link
-                to={`movies/${movie.id}`}
-                state={{ from: '/' }}
-                className={styles.link}
-              >
-                {movie.title}
-              </Link>
-            </li>
-          );
-        })}
-      </ul>
+      <div className={styles.moviesGrid}>
+        {trending.map(movie => (
+          <div key={movie.id} className={styles.movieCard}>
+            <Link
+              to={`movies/${movie.id}`}
+              state={{ from: '/' }}
+              className={styles.link}
+            >
+              <img
+                src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+                alt={movie.title}
+                className={styles.movieImage}
+              />
+              <p className={styles.movieTitle}>{movie.title}</p>
+            </Link>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

@@ -1,15 +1,18 @@
 .containerHome {
-    padding: 40px;
-    margin-bottom: 20px;
+    padding: 20px;
 }
 
 .containerBox {
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     align-items: center;
+    margin-bottom: 20px;
+}
+
+.iconHome {
+    font-size: 40px;
+    margin: 0 10px;
+    fill: #d8672b;
 }
 
 .titleBox {
@@ -17,20 +20,26 @@
     flex-direction: row;
     align-items: center;
     padding: 10px;
-    text-transform:uppercase;
+    text-transform: uppercase;
     color: #102e52;
 }
 
-.iconHome {
-    width: 25px;
-    height: 25px;
-    fill: #d8672b;
+.moviesGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    margin: 0 100px;
 }
 
-.moviesList {
-    list-style-type: none;
-    padding-bottom: 10px;
-    text-align: center;
+.movieCard {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.movieCard:hover {
+    transform: scale(1.05);
 }
 
 .link {
@@ -43,5 +52,15 @@
 
 .link:hover {
     color: #d8672b;
-    font-weight: 700;
+}
+
+.movieImage {
+    width: 100%;
+    height: auto;
+}
+
+.movieTitle {
+    margin: 10px 0;
+    font-size: 18px;
+    text-align: center;
 }
