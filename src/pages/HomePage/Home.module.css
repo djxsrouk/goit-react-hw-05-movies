@@ -15,6 +15,18 @@
     fill: #d8672b;
 }
 
+.iconHomeRev {
+    font-size: 40px;
+    margin: 0 10px;
+    fill: #d8672b;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+}
+
 .titleBox {
     display: flex;
     flex-direction: row;
@@ -35,7 +47,7 @@
     background-color: #f0f0f0;
     border-radius: 10px;
     overflow: hidden;
-    transition: transform 0.3s;
+    transition: transform 0.5s;
 }
 
 .movieCard:hover {

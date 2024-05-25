@@ -4,6 +4,7 @@ import Searchbar from '../../components/SearchBar/SearchBar';
 import { Link } from 'react-router-dom';
 import { useSearchParams } from 'react-router-dom';
 import styles from './MoviesPage.module.css';
+import defaultImage from '../../images/default-image.jpg';
 
 const Movies = () => {
   const [movies, setMovies] = useState([]);
@@ -36,16 +37,25 @@ const Movies = () => {
       <Searchbar onSubmit={e => setSearchParams({ query: e })}></Searchbar>
       {isLoading && <div>Loading...</div>}
       {movies.length > 0 ? (
-        <ul>
+        <ul className={styles.moviesGrid}>
           {movies.map(movie => {
             return (
-              <li className={styles.movieSearchItem} key={movie.id}>
+              <li className={styles.movieCard} key={movie.id}>
                 <Link
-                  className={styles.movieSearchLink}
-                  to={`${movie.id}`}
-                  state={{ from: `/movies/?${searchParams}` }}
+                  to={`/movies/${movie.id}`} // Ensure the path is correct
+                  state={{ from: '/movies' }} // Ensure the state is correct
+                  className={styles.link}
                 >
-                  {movie.title}
+                  <img
+                    src={
+                      movie.poster_path
+                        ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
+                        : defaultImage
+                    }
+                    alt={movie.title}
+                    className={styles.movieImage}
+                  />
+                  <p className={styles.movieTitle}>{movie.title}</p>
                 </Link>
               </li>
             );

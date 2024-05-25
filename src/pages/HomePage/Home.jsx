@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { fetchTrendingMovies } from '../../Data/API';
 import { Link } from 'react-router-dom';
 import styles from './Home.module.css';
-import { LuPopcorn } from 'react-icons/lu';
+import { MdLocalMovies } from 'react-icons/md';
+import { MdTrendingUp } from 'react-icons/md';
 
 const Home = () => {
   const [trending, setTrending] = useState([]);
@@ -22,9 +23,11 @@ const Home = () => {
   return (
     <div className={styles.containerHome}>
       <div className={styles.containerBox}>
-        <LuPopcorn className={styles.iconHome} />
-        <h1 className={styles.titleBox}>Top Trending movies today</h1>
-        <LuPopcorn className={styles.iconHome} />
+        <MdTrendingUp className={styles.iconHome} />
+        <MdLocalMovies className={styles.iconHome} />
+        <h1 className={styles.titleBox}>Top trending today</h1>
+        <MdLocalMovies className={styles.iconHome} />
+        <MdTrendingUp className={styles.iconHomeRev} />
       </div>
       <div className={styles.moviesGrid}>
         {trending.map(movie => (

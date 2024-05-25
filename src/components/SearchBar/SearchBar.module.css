@@ -1,12 +1,3 @@
-/* .formContainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    padding: 30px;
-} */
 .wrap {
     list-style-type: none;
     display: flex;
